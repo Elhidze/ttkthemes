@@ -8,10 +8,6 @@ from tkinter import TkVersion
 from setuptools import setup
 
 
-if TkVersion <= 8.5:
-    message = "This version of ttkthemes does not support Tk 8.5 and earlier. Please install a later version."
-    raise RuntimeError(message)
-
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
